@@ -1,54 +1,86 @@
-# XenZ Technologies
+<div align="center">
 
-### AI Learning · Smart Tools · Career Development
+  <img src="logo.png" alt="XenZ Technologies Logo" width="180" />
 
-XenZ Technologies is a web-based learning platform designed to help students and professionals explore AI tools, improve productivity, and develop practical digital skills.
+  # XenZ Technologies
 
-The platform combines a modern, responsive website with an enrollment workflow, online payment integration, student record management, and administrative reporting.
+  ### AI Learning. Smarter Workflows. Better Opportunities.
 
-<p align="left">
-  <a href="https://xenztechnologies.in/">
-    <img src="https://img.shields.io/badge/Live%20Website-Visit%20Now-0EA5E9?style=for-the-badge" alt="Visit Live Website">
-  </a>
-  <a href="https://github.com/maahii-in/Xenz-Technologies">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
-  </a>
-</p>
+  Empowering students and professionals through AI education, intelligent productivity tools, and practical digital skills.
+
+  <p>
+    <a href="https://xenztechnologies.in/">
+      <img src="https://img.shields.io/badge/WEBSITE-xenztechnologies.in-38BDF8?style=for-the-badge" alt="Live Website" />
+    </a>
+    <a href="https://github.com/maahii-in/Xenz-Technologies">
+      <img src="https://img.shields.io/badge/SOURCE-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub Repository" />
+    </a>
+  </p>
+
+  <p>
+    <strong>Learn AI</strong> &nbsp; • &nbsp;
+    <strong>Discover Tools</strong> &nbsp; • &nbsp;
+    <strong>Build Skills</strong>
+  </p>
+
+</div>
 
 ---
 
 ## Overview
 
-XenZ Technologies provides a centralized web experience for discovering AI learning opportunities, accessing productivity resources, and enrolling in training programs.
+**XenZ Technologies** is a web-based AI learning and productivity platform built to help students and professionals explore artificial intelligence, discover useful digital tools, and pursue career-oriented learning opportunities.
 
-The application includes a frontend built with HTML, CSS, and JavaScript, supported by a Node.js and Express backend. The backend handles enrollment requests, payment verification, student records, and administrative API operations.
+The platform combines a modern frontend experience with a Node.js and Express backend to support enrollment, online payments, student information management, and administrative reporting.
 
-### Key Features
+Designed with a dark visual theme, responsive layouts, and a streamlined user experience, XenZ Technologies brings its core learning and enrollment features together in one place.
 
-- **AI Learning:** A dedicated landing page presenting AI classes and career-oriented learning opportunities.
-- **AI Productivity Tools:** A dedicated page for exploring useful AI tools and resources.
-- **Online Enrollment:** A form-based enrollment workflow for collecting student information.
-- **Payment Integration:** Razorpay order creation and payment signature verification.
-- **Student Management:** Enrollment record storage through Google Sheets when configured.
-- **Admin Dashboard:** Enrollment records, revenue summaries, enrollment analytics, and CSV export.
-- **Payment Confirmation:** Dedicated pages for payment confirmation, receipts, and enrollment success.
-- **Certificate Support:** A dedicated certificate page.
-- **WhatsApp Notifications:** Optional enrollment confirmation through the WhatsApp Cloud API.
-- **Responsive Interface:** A modern dark-themed design with cyan accents, feature cards, and animated background elements.
+### Project Links
+
+| Resource | Details |
+|---|---|
+| Live Website | [xenztechnologies.in](https://xenztechnologies.in/) |
+| Source Code | [GitHub Repository](https://github.com/maahii-in/Xenz-Technologies) |
+| Main Website | `index.html` |
+| AI Tools | `ai-tools.html` |
+| Enrollment | `enroll.html` |
+| Administration | `admin.html` |
 
 ---
 
-## Live Project
+## Key Features
 
-| Resource | Link |
-|---|---|
-| Live Website | https://xenztechnologies.in/ |
-| GitHub Repository | https://github.com/maahii-in/Xenz-Technologies |
-| Main Page | `index.html` |
-| AI Tools | `ai-tools.html` |
-| Enrollment | `enroll.html` |
-| Admin Dashboard | `admin.html` |
-| Backend Server | `server.js` |
+### AI Learning & Productivity
+
+- AI learning and training information.
+- Dedicated AI tools and productivity resources.
+- Career-oriented digital learning experience.
+- Clean, responsive website interface.
+- Animated backgrounds and modern UI components.
+
+### Enrollment & Payments
+
+- Student enrollment form.
+- Razorpay payment order creation.
+- Server-side payment signature verification.
+- Payment confirmation and success pages.
+- Configurable training or meeting link after successful payment verification.
+
+### Student Management
+
+- Enrollment record collection.
+- Optional Google Sheets integration.
+- Student information retrieval.
+- Enrollment and revenue analytics.
+- Recent enrollment summaries.
+- CSV export functionality.
+
+### Notifications & Administration
+
+- Optional WhatsApp Cloud API enrollment notifications.
+- Password-protected administrative API endpoints.
+- Enrollment overview and reporting.
+- Configurable application settings through environment variables.
 
 ---
 
@@ -56,73 +88,110 @@ The application includes a frontend built with HTML, CSS, and JavaScript, suppor
 
 | Technology | Purpose |
 |---|---|
-| HTML5 | Website structure |
-| CSS3 | Styling, layouts, animations, and responsive design |
-| JavaScript | Frontend interactions and API integration |
+| HTML5 | Frontend structure |
+| CSS3 | Styling, responsive layouts, and animations |
+| JavaScript | Frontend interactions and API communication |
 | Node.js | Backend runtime |
-| Express.js | HTTP server and REST API |
+| Express.js | HTTP server and API endpoints |
 | Razorpay | Online payment processing |
-| Google Sheets API | Optional enrollment data storage |
-| WhatsApp Cloud API | Optional enrollment notifications |
-| dotenv | Environment variable management |
-| CORS | Cross-origin request configuration |
-| Nodemon | Development server restarts |
+| Google Sheets API | Enrollment record management |
+| WhatsApp Cloud API | Enrollment notifications |
+| dotenv | Environment configuration |
+| CORS | Cross-origin request handling |
+| Nodemon | Development workflow |
 
 ---
 
-## Project Structure
+## Project Architecture
+
+The application uses a client-server architecture that connects the website interface to backend APIs and optional third-party services.
+
+```mermaid
+flowchart TB
+    A[Website Interface]
+    B[HTML, CSS and JavaScript]
+    C[Node.js and Express]
+    D[Enrollment API]
+    E[Payment Verification]
+    F[Admin and Analytics API]
+    G[Razorpay]
+    H[Google Sheets]
+    I[WhatsApp Cloud API]
+
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F
+    E --> G
+    D --> H
+    D --> I
+
+    classDef frontend fill:#172554,stroke:#38BDF8,color:#FFFFFF
+    classDef backend fill:#172033,stroke:#818CF8,color:#FFFFFF
+    classDef service fill:#102A24,stroke:#34D399,color:#FFFFFF
+
+    class A,B frontend
+    class C,D,E,F backend
+    class G,H,I service
+```
+
+*Google Sheets and WhatsApp functionality depend on their respective configuration. Payment operations require valid Razorpay credentials.*
+
+---
+
+## Repository Structure
 
 ```text
 Xenz-Technologies/
 │
-├── frontend/                # Frontend resources
-├── yaml/                    # YAML configuration files
+├── frontend/                 # Frontend resources
+├── yaml/                     # YAML-related configuration
 │
-├── index.html               # Main landing page
-├── ai-tools.html            # AI productivity tools page
-├── enroll.html              # Enrollment and payment workflow
-├── admin.html               # Admin dashboard
-├── certificate.html         # Certificate page
-├── content.html             # Supporting content page
-├── payment-confirm.html     # Payment confirmation page
-├── receipt.html             # Receipt page
-├── success.html             # Enrollment success page
-├── exclude.html             # Supporting page
+├── index.html                # Main landing page
+├── ai-tools.html             # AI tools page
+├── enroll.html               # Enrollment and payment interface
+├── admin.html                # Administrative dashboard
+├── certificate.html          # Certificate page
+├── content.html              # Supporting content page
+├── exclude.html              # Supporting page
+├── payment-confirm.html      # Payment confirmation page
+├── receipt.html               # Receipt page
+├── success.html               # Enrollment success page
 │
-├── server.js                # Express backend and API routes
-├── server.txt               # Supporting server file
-├── students.json            # Student-related JSON data
+├── server.js                  # Express backend and API routes
+├── server.txt                 # Supporting server file
+├── students.json              # Student-related JSON data
 │
-├── logo.png                 # Logo asset
-├── phone.png                # Image asset
-├── simple cetifi.png        # Certificate image asset
-├── simplecetifi.png         # Certificate image asset
-├── xzt.png                  # Brand image asset
+├── logo.png                   # Brand logo
+├── xzt.png                    # Brand image asset
+├── phone.png                  # Image asset
+├── simple cetifi.png          # Certificate image
+├── simplecetifi.png           # Certificate image
 │
-├── .env.example             # Environment variable template
-├── .gitignore               # Git ignore rules
-├── .config.yml               # Not applicable; see _config.yml below
-├── _config.yml              # Site configuration
-├── CNAME                    # Custom domain configuration
-├── package.json             # Dependencies and npm scripts
-└── package-lock.json        # Dependency lock file
+├── package.json               # Dependencies and npm scripts
+├── package-lock.json          # Dependency lock file
+├── .env.example               # Environment variable template
+├── .gitignore                 # Git ignore configuration
+├── _config.yml                # Site configuration
+└── CNAME                      # Custom domain configuration
 ```
 
 ---
 
 ## Getting Started
 
-Follow these steps to run the project locally.
+Follow the instructions below to run the application locally.
 
 ### Prerequisites
 
-Install the following:
+Ensure that the following tools are installed:
 
-- [Node.js](https://nodejs.org/) version 18 or later
-- npm
-- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/) version 18 or later.
+- npm, included with Node.js.
+- [Git](https://git-scm.com/).
 
-Third-party credentials are required to test the corresponding payment and notification integrations.
+Credentials for third-party services are required only when using their corresponding integrations.
 
 ### 1. Clone the Repository
 
@@ -144,7 +213,7 @@ npm install
 
 ### 3. Configure Environment Variables
 
-Create a local `.env` file using the provided example.
+Create a local `.env` file from the provided template.
 
 **Windows Command Prompt**
 
@@ -158,120 +227,113 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Open `.env` and update the configuration values using your own credentials.
+Open `.env` and provide the appropriate configuration values.
 
-See [Environment Configuration](#environment-configuration) for details.
+Refer to the [Configuration](#configuration) section for details.
 
-### 4. Start the Application
+### 4. Start the Server
 
-Start the server:
+Start the application:
 
 ```bash
 npm start
 ```
 
-For development:
+Start the development server with automatic restarts:
 
 ```bash
 npm run dev
 ```
 
-The default local address is:
+### 5. Access the Application
 
-```text
-http://localhost:5000
-```
+Open the following URL in your browser:
 
-The backend health endpoint is available at:
+**Website:** http://localhost:5000
 
-```text
-http://localhost:5000/api/health
-```
+**Backend Health Check:** http://localhost:5000/api/health
 
-The Express server serves the website files and API routes from the project directory.
+The Express server serves the website files and handles the backend API requests.
 
 ---
 
-## Environment Configuration
+## Configuration
 
-The application reads configuration values from environment variables using `dotenv`.
+Application settings are managed through environment variables.
 
 | Variable | Description |
 |---|---|
-| `PORT` | Server port. Defaults to `5000`. |
-| `ADMIN_PASSWORD` | Password used by the current admin authentication implementation. |
-| `MEET_LINK` | Meeting or training URL returned after successful payment verification. |
-| `RAZORPAY_KEY_ID` | Razorpay public key identifier. |
-| `RAZORPAY_KEY_SECRET` | Private Razorpay secret used for signature verification. |
-| `ENROLLMENT_PRICE` | Enrollment amount in paise. For example, `3700` represents ₹37. |
+| `PORT` | Backend server port. Defaults to `5000`. |
+| `ADMIN_PASSWORD` | Password used by the current administrator authentication implementation. |
+| `MEET_LINK` | Training or meeting URL returned after successful payment verification. |
+| `RAZORPAY_KEY_ID` | Razorpay public API key. |
+| `RAZORPAY_KEY_SECRET` | Razorpay secret used for payment signature verification. |
+| `ENROLLMENT_PRICE` | Enrollment price in paise. For example, `3700` represents ₹37. |
 | `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Google Cloud service account email. |
-| `GOOGLE_PRIVATE_KEY` | Private key for the Google service account. |
+| `GOOGLE_PRIVATE_KEY` | Google service account private key. |
 | `GOOGLE_SHEET_ID` | Google spreadsheet identifier. |
-| `WHATSAPP_PHONE_NUMBER_ID` | WhatsApp Cloud API phone-number ID. |
+| `WHATSAPP_PHONE_NUMBER_ID` | WhatsApp Business Cloud API phone-number ID. |
 | `WHATSAPP_ACCESS_TOKEN` | WhatsApp Cloud API access token. |
-| `WHATSAPP_TEMPLATE_NAME` | Optional WhatsApp message template name. |
+| `WHATSAPP_TEMPLATE_NAME` | Optional enrollment notification template name. |
 
-### Configuration Notes
+The WhatsApp variables are optional configuration values supported by the backend. Add them to `.env` when enabling that integration.
 
-- Use real credentials only in your local `.env` file or hosting provider's secure environment settings.
-- Keep `RAZORPAY_KEY_SECRET`, `GOOGLE_PRIVATE_KEY`, and `WHATSAPP_ACCESS_TOKEN` private.
-- For Google Sheets integration, enable the Sheets API and grant the service account access to the target spreadsheet.
-- The WhatsApp variables are optional and should be configured only when the integration is needed.
-- The Google Sheets integration expects a worksheet named `Sheet1` with the appropriate header row.
-- Enrollment amounts are configured in paise, not rupees.
+### Razorpay Setup
 
----
+1. Create or access your account at [Razorpay](https://dashboard.razorpay.com/).
+2. Obtain your API key ID and secret.
+3. Add the credentials to your environment.
+4. Test the payment flow using test credentials.
+5. Verify successful and unsuccessful payment scenarios before deploying.
 
-## Application Architecture
+**Important:** Never expose the Razorpay secret in frontend code or commit it to GitHub.
 
-The application follows a straightforward client-server architecture.
+### Google Sheets Setup
 
-```text
-                 ┌─────────────────────────┐
-                 │       Web Browser       │
-                 │                         │
-                 │ HTML · CSS · JavaScript │
-                 └────────────┬────────────┘
-                              │
-                              │ HTTP Requests
-                              ▼
-                 ┌─────────────────────────┐
-                 │      Express Server     │
-                 │                         │
-                 │ Static Files & REST API │
-                 └────────────┬────────────┘
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-      ┌────────────┐   ┌──────────────┐  ┌─────────────┐
-      │  Razorpay  │   │ Google Sheets│  │  WhatsApp   │
-      │  Payments  │   │   API        │  │ Cloud API   │
-      └────────────┘   └──────────────┘  └─────────────┘
-```
+To enable spreadsheet-based enrollment storage:
 
-Google Sheets and WhatsApp integrations depend on the appropriate credentials and configuration. Razorpay payment functionality also requires valid API credentials.
+1. Create a Google Cloud project.
+2. Enable the Google Sheets API.
+3. Create a service account.
+4. Configure the service account email and private key.
+5. Share the target spreadsheet with the service account.
+6. Configure `GOOGLE_SHEET_ID`.
+7. Ensure that the worksheet is named `Sheet1` and has the expected columns.
+
+The current backend reads and writes enrollment data in the range `Sheet1!A:G`.
+
+### WhatsApp Setup
+
+To enable WhatsApp enrollment confirmations:
+
+1. Configure the WhatsApp Business Cloud API.
+2. Obtain the phone-number ID and access token.
+3. Configure an approved message template.
+4. Set the corresponding environment variables.
+5. Test message delivery using an authorized recipient.
+
+Notification delivery depends on valid credentials, template configuration, and the WhatsApp API response.
 
 ---
 
 ## API Reference
 
-The backend API is implemented in `server.js`.
+The API routes are implemented in `server.js`.
 
-| Method | Endpoint | Description |
+| Method | Endpoint | Purpose |
 |---|---|---|
-| `GET` | `/api/health` | Returns backend and integration status. |
+| `GET` | `/api/health` | Reports backend and integration configuration status. |
 | `GET` | `/api/razorpay-key` | Returns the configured Razorpay public key. |
 | `POST` | `/api/create-order` | Creates a Razorpay payment order. |
 | `POST` | `/api/verify-payment` | Verifies the payment signature and processes enrollment. |
 | `POST` | `/api/admin/login` | Validates administrator credentials. |
 | `GET` | `/api/students` | Retrieves enrollment records. |
-| `GET` | `/api/analytics` | Returns enrollment and revenue analytics. |
-| `GET` | `/api/export` | Exports enrollment data as CSV. |
+| `GET` | `/api/analytics` | Returns enrollment and revenue statistics. |
+| `GET` | `/api/export` | Exports enrollment records as CSV. |
 
-The student, analytics, and export endpoints use the current backend's administrator password check.
+The student, analytics, and export endpoints use the administrator password check implemented in the backend.
 
-### Health Check Example
+### Health Check
 
 Request:
 
@@ -290,132 +352,159 @@ Example response:
 }
 ```
 
-The values in this example are illustrative. The actual response reflects the current server configuration.
+*The values above are illustrative. Actual values depend on the current server configuration.*
+
+### Payment Order Creation
+
+Request:
+
+```http
+POST /api/create-order
+Content-Type: application/json
+```
+
+Example request body:
+
+```json
+{
+  "name": "Example Student",
+  "mobile": "9876543210",
+  "email": "student@example.com"
+}
+```
+
+The backend validates the required fields and creates an order through Razorpay when payment configuration is available.
+
+### Payment Verification
+
+The verification endpoint checks the Razorpay payment signature before processing enrollment information.
+
+```http
+POST /api/verify-payment
+Content-Type: application/json
+```
+
+The request includes the Razorpay order ID, payment ID, payment signature, and enrollment information.
+
+A successful response includes a confirmation message and the configured training link.
 
 ---
 
-## Enrollment and Payment Workflow
+## Enrollment Workflow
 
-The enrollment workflow is designed around the following steps:
+The enrollment and payment process follows this sequence:
 
-1. The student enters the required enrollment information.
-2. The frontend requests a payment order from the backend.
-3. The backend creates an order through Razorpay.
-4. The student completes the payment through the payment interface.
-5. Payment details are submitted to the backend for signature verification.
-6. After successful verification, the backend processes the enrollment record.
-7. The record is stored in Google Sheets when the integration is configured.
+1. The student completes the enrollment form.
+2. The frontend requests a payment order.
+3. The backend creates the order through Razorpay.
+4. The student completes checkout.
+5. Payment details are submitted to the verification endpoint.
+6. The backend verifies the payment signature.
+7. Enrollment information is stored through the configured storage integration.
 8. An optional WhatsApp confirmation is attempted.
-9. The configured meeting or training URL is returned to the frontend.
+9. The training link is returned after successful verification.
 
-Payment-related operations should always be validated on the server. A frontend success message alone is not proof of a successful payment.
-
----
-
-## Student Data and Storage
-
-The application supports Google Sheets for storing enrollment information.
-
-The current implementation records fields including:
-
-- Student name
-- Mobile number
-- Email address
-- Enrollment amount
-- Razorpay payment ID
-- Razorpay order ID
-- Enrollment timestamp
-
-### Storage Behavior
-
-When Google Sheets is configured and available, the server uses it to read and append enrollment records.
-
-Otherwise, the current implementation falls back to an in-memory array. This fallback is temporary: its contents are lost when the Node.js process restarts.
-
-For persistent records, configure Google Sheets correctly or replace the fallback with a persistent database.
+Payment confirmation must be based on server-side verification, not solely on the result displayed by the frontend.
 
 ---
 
-## Admin Dashboard
+## Data Management
 
-The admin functionality provides access to enrollment and reporting operations.
+The current implementation supports Google Sheets as the enrollment record store.
 
-Current backend capabilities include:
+Enrollment records include:
 
-- Administrator password verification
-- Student record retrieval
-- Total enrollment calculation
-- Revenue calculation from enrollment records
-- Seven-day enrollment summaries
-- Recent enrollment data
-- CSV export
+- Student name.
+- Mobile number.
+- Email address.
+- Enrollment amount.
+- Razorpay payment ID.
+- Razorpay order ID.
+- Enrollment timestamp.
 
-Before exposing the dashboard publicly, review the administrator authentication implementation and apply appropriate production security controls.
+### Storage Considerations
+
+When Google Sheets is configured, the application reads and appends records using the Sheets API.
+
+If Google Sheets is unavailable or not configured, the current implementation falls back to an in-memory array. This fallback is temporary and does not provide persistence across server restarts.
+
+For reliable production operations, use a properly configured persistent storage solution and establish a suitable backup and recovery process.
 
 ---
 
 ## Deployment
 
-The project can be deployed to a Node.js hosting platform or adapted to a separate static frontend and backend deployment.
+The application can be deployed to a Node.js hosting service.
 
 ### Backend Deployment
 
 1. Connect the GitHub repository to your hosting provider.
-2. Install the project dependencies.
-3. Set the start command to:
+2. Configure dependency installation:
+
+   ```bash
+   npm install
+   ```
+
+3. Set the application start command:
 
    ```bash
    npm start
    ```
 
-4. Configure the environment variables in the hosting dashboard.
+4. Add environment variables in the hosting dashboard.
 5. Deploy the application.
-6. Test `/api/health`.
-7. Verify the enrollment, payment, and admin workflows.
+6. Test the health endpoint.
+7. Validate enrollment, payment verification, and administrator functionality.
 
-### Frontend Configuration
+### Frontend Deployment
 
-If the frontend and backend are deployed on different domains, update the API base URL used by the frontend pages.
+The current Express server can serve the frontend directly.
 
-The backend's CORS configuration must also allow the intended frontend origin.
+If the frontend and backend are hosted separately:
 
-Use HTTPS for production traffic and test the full payment flow before enabling live transactions.
+- Update the API base URL in the frontend.
+- Configure CORS for the intended frontend origin.
+- Enable HTTPS.
+- Verify third-party integration settings.
+- Test the entire enrollment workflow in the deployed environment.
 
 ---
 
 ## Security Considerations
 
-The following practices are recommended before production use:
+Security is important when handling enrollment information and payment operations.
 
-- Never commit `.env` files or private credentials.
-- Use strong, unique administrator credentials.
-- Keep payment verification and secrets on the backend.
-- Validate enrollment inputs on the server.
-- Restrict CORS to the required production origins.
-- Use HTTPS for all production endpoints.
-- Add rate limiting and stronger session-based administrator authentication as appropriate.
-- Avoid transmitting passwords in query strings.
-- Use persistent storage for important enrollment and payment records.
-- Review error handling and logs to avoid exposing sensitive information.
-- Test payment integration using Razorpay test credentials before switching to live mode.
+Recommended practices include:
+
+- Keep environment files and private credentials out of version control.
+- Never expose payment secrets in browser-side JavaScript.
+- Use HTTPS for production traffic.
+- Validate user input on the backend.
+- Restrict cross-origin access to the intended domains.
+- Use persistent storage for important records.
+- Avoid transmitting administrator passwords through URL query parameters.
+- Replace basic administrator password checks with robust session-based or token-based authentication before production use.
+- Add appropriate rate limiting and request validation.
+- Avoid exposing personal information in logs or API errors.
+- Test payment verification using Razorpay test mode before processing live transactions.
 
 ---
 
 ## Development Commands
 
-| Command | Purpose |
+| Command | Description |
 |---|---|
-| `npm install` | Install dependencies. |
-| `npm start` | Start the application server. |
-| `npm run dev` | Run the server with Nodemon during development. |
+| `npm install` | Installs project dependencies. |
+| `npm start` | Starts the Express server. |
+| `npm run dev` | Starts the development server with Nodemon. |
 
 ---
 
 ## Contributing
 
-Contributions, suggestions, and bug reports are welcome.
+Contributions and improvements are welcome.
 
-To contribute:
+### Contribution Process
 
 1. Fork the repository.
 2. Create a feature branch.
@@ -424,42 +513,50 @@ To contribute:
    git checkout -b feature/your-feature
    ```
 
-3. Implement and test your changes.
-4. Commit your work.
+3. Implement your changes and test them.
+4. Commit your changes.
 
    ```bash
    git add .
    git commit -m "Describe your changes"
    ```
 
-5. Push the branch.
+5. Push your branch.
 
    ```bash
    git push origin feature/your-feature
    ```
 
-6. Open a pull request with a clear description of the changes.
+6. Open a pull request with a clear description of the proposed changes.
+
+For significant changes, open an issue first to discuss the intended implementation.
 
 ---
 
 ## License
 
-A license file is not currently present in the repository. Add a `LICENSE` file to clearly establish the permissions and conditions for using, modifying, and distributing the project.
+A license file is not currently included in the repository.
 
-Until a license is specified, do not assume that unrestricted reuse is permitted.
+Add an appropriate `LICENSE` file to define the terms governing the use, modification, and distribution of the project.
 
----
-
-## Contact & Links
-
-**XenZ Technologies**
-
-- Website: https://xenztechnologies.in/
-- Repository: https://github.com/maahii-in/Xenz-Technologies
+Until licensing terms are established, do not assume that unrestricted reuse is permitted.
 
 ---
 
-<p align="center">
-  <strong>XenZ Technologies</strong><br>
-  AI Learning · Productivity · Digital Skills
-</p>
+## Connect With XenZ Technologies
+
+**Website:** [https://xenztechnologies.in/](https://xenztechnologies.in/)
+
+**GitHub:** [https://github.com/maahii-in/Xenz-Technologies](https://github.com/maahii-in/Xenz-Technologies)
+
+---
+
+<div align="center">
+
+  **XenZ Technologies**
+
+  *AI Learning · Productivity · Digital Skills*
+
+  Built to make AI learning and digital productivity more accessible.
+
+</div>
